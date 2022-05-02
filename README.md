@@ -103,8 +103,32 @@ The Simulator release can be downloaded as a prebuilt binary from the  simulator
 2.  Store > Vehicle search for "Vanilla pod" and "Add to Library"
 3.  in Library > Vehicles should be now "Vanilla pod", on right you will find Sensors configuration
 4.  Add new sensor configuration, Name: vanilla_config, Access: Private, Brdige: ROS2
-5.  Under SAVE button is icon to edit configuration "{..}", place inside this RAW configuration
+5.  Under SAVE button is icon to edit configuration "{..}", place inside RAW configuration and SAVE: https://raw.githubusercontent.com/tomaslieven/vanilla-hackathon/main/vanilla_config
 6.  From sidebar Simulations > Add new
 7.  In setting up New simulation > Add name/description , cluster select your cluster which you linked and created and Keep only "Interactive mode" selected
 8.  On Next page > Runtime templace: "Random Traffic", Map: AutonomousStuff, Vehicle: Vanilla, Sensor configuration: vanilla_config
 9.  From Autopilot select "Other ROS2 Autopilot", bridge connection should be set to localhost:9090 if you running locally or set IP of remote machine where the bridge is running
+10.  Run simulator, click PLAY in simulator window. you should be able to control with arrows vehicle, F12 resets position 
+
+## Access simulation and make vehicle move
+You should have Simulator running, lgsvl_bridge running in terminal as well
+
+### Access all topics available
+```bash
+source /opt/ros/foxy/install/setup.bash
+ros2 topic list 
+```
+
+listen to messages from any topic via:
+```bash
+ros2 topic echo / TODO
+```
+
+### VIsualize topics from simulator
+TODO
+
+### Publish message to make vehicle move
+TODO
+
+
+
