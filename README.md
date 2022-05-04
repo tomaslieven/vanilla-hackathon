@@ -174,7 +174,7 @@ rviz2 -d vanilla_hackathon.rviz
 ```
 
 ### happy hacking :) 
-toma[_]vanilla.cz / jan[_]vanilla.cz
+tomas[x]vanilla.cz / jan[x]vanilla.cz
 
 
 
