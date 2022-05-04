@@ -1,7 +1,11 @@
-# VANILLA
+# VANILLA Hackathon
 ![enter image description here](https://imgs.xkcd.com/comics/pointers.png)
 
-Steps inside this tutorial will help you to get up and running with simulation using LGSVL and ROS2. LGSV is Unity-based multi-robot simulator for autonomous vehicle developers and recommended to use NVIDIA based laptop to accelerate development. 
+Steps inside this tutorial will help you to get up and running with simulation using LGSVL and ROS2. 
+
+LGSV is Unity-based multi-robot simulator for autonomous vehicle developers and recommended to use NVIDIA based laptop to accelerate development. 
+
+The Robot Operating System (ROS) is a set of software libraries and tools for building robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. And it's all open source.
 
 # ROS2 FOXY INSTALL
 Steps below are tested under Ubuntu 20, you can also follow up with slightly modified tutorial on Mac or Windows
