@@ -115,7 +115,18 @@ The Simulator release can be downloaded as a prebuilt binary from the  simulator
 10.  Run simulator, click PLAY in simulator window. you should be able to control with arrows vehicle, F12 resets position 
 
 ## Access simulation and make vehicle move
-You should have Simulator running, lgsvl_bridge running in terminal as well
+You should have lgsvl_bridge running in terminal1 following up with SImulator instance, following commnad should control vehicle
+
+```bash
+ros2 topic pub -r 10 /lgsvl/vehicle_control_cmd lgsvl_msgs/msg/VehicleControlData "{
+acceleration_pct: 0.3,
+braking_pct: 0.0,
+target_wheel_angle: 2.0,
+target_wheel_angular_rate: 1,
+target_gear: 1
+}"
+```
+
 
 ### Access all topics available
 ```bash
@@ -123,16 +134,47 @@ source /opt/ros/foxy/install/setup.bash
 ros2 topic list 
 ```
 
-listen to messages from any topic via:
+
+listen to messages from any topic i.e. GPS:
 ```bash
-ros2 topic echo / TODO
+ros2 topic echo /gnss/fix
+```
+you should see following message:
+```bash
+---
+header:
+  stamp:
+    sec: 1651661340
+    nanosec: 304243712
+  frame_id: gnss
+status:
+  status: 0
+  service: 1
+latitude: 37.38052298600204
+longitude: -121.90916628995981
+altitude: 11.981121063232422
+position_covariance:
+- 0.0001
+- 0.0
+- 0.0
+- 0.0
+- 0.0001
+- 0.0
+- 0.0
+- 0.0
+- 0.0001
+position_covariance_type: 2
+---
 ```
 
-### VIsualize topics from simulator
-TODO
+### Visualize topics from simulator
+Lidar, trajectory, TFs and other topics can be visualized from tool RVIZ:
+```bash
+rviz2 -d vanilla_hackathon.rviz 
+```
 
-### Publish message to make vehicle move
-TODO
+### happy hacking :) 
+tomas@vanilla.cz / jan@vanilla.cz
 
 
 
