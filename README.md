@@ -1,3 +1,4 @@
+
 # VANILLA Hackathon
 ![enter image description here](https://imgs.xkcd.com/comics/pointers.png)
 
@@ -57,6 +58,9 @@ In another terminal source the setup file and then run a Python listener:
 You should see the talker saying that it’s Publishing messages and the listener saying I heard those messages. This verifies both the C++ and Python APIs are working properly. 
 
 **A JE TO!**
+
+![enter image description here](https://raw.githubusercontent.com/tomaslieven/vanilla-hackathon/main/imgs/s1.png)
+
 
 
 # LGSVL setup with bridge
@@ -167,6 +171,8 @@ position_covariance_type: 2
 ---
 ```
 
+![enter image description here](https://raw.githubusercontent.com/tomaslieven/vanilla-hackathon/main/imgs/s2.png)
+
 ### Visualize topics from simulator
 Lidar, trajectory, TFs and other topics can be visualized from tool RVIZ:
 ```bash
@@ -175,6 +181,3 @@ rviz2 -d vanilla_hackathon.rviz
 
 ### happy hacking :) 
 tomas[x]vanilla.cz / jan[x]vanilla.cz
-
-
-
